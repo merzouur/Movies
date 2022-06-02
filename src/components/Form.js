@@ -7,7 +7,7 @@ const Form = () => {
     const [search, setSearch] = useState("code")
 
     useEffect(() => {
-        axios.get('https://api.themoviedb.org/3/search/movie?api_key=f090bb54758cabf231fb605d3e3e0468&query=coucou&language=fr-FR').then((res) => setMoviesData(res.data.results));
+        axios.get('https://api.themoviedb.org/3/search/movie?api_key=f090bb54758cabf231fb605d3e3e0468&query=recrute&language=fr-FR').then((res) => setMoviesData(res.data.results));
 
     }, [search]);
 
